@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'), url('/fonts/Lato-Regular.woff2') format('woff2'), url('/fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Medium Italic'), local('Lato-MediumItalic'), url('/fonts/Lato-MediumItalic.woff2') format('woff2'), url('/fonts/Lato-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'), url('/fonts/Lato-Bold.woff2') format('woff2'), url('/fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Light'), local('Lato-Light'), url('/fonts/Lato-Light.woff2') format('woff2'), url('/fonts/Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    max-width: 1600px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: #FFFFFF;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+p {
+    margin: 0 auto;
+}
+
+
+/* header */
+
+.header__nav {
+    background-color: #222222;
+}
+
+.header__nav-list {
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__nav-items--left {
+    gap: 41px;
+    align-items: flex-end;
+}
+
+.header__nav-items--right {
+    gap: 33px;
+    align-items: center;
+}
+
+.cart-img {
+    position: relative;
+}
+
+.cart-circle {
+    position: absolute;
+}
+
+
+/* hero */
+
+.hero {
+    margin-bottom: 65px;
+}
+
+.hero__text {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+    margin: 0;
+    margin-left: 64px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.fat-name {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+}
+
+.pink-name {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #F16D7F;
+}
+
+.hero__right {
+    align-items: center;
+}
+
+.hero__right {
+    width: 50%;
+    background-color: #F1E4E6;
+}
+
+
+/* products */
+
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "women men kids" "accesories accesories accesories";
+    gap: 30px;
+}
+
+.pd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 260px;
+    background: rgba(33, 22, 22, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.product__card--1 {
+    background-image: url(/img/for-woman.png);
+    background-repeat: no-repeat;
+    grid-area: women;
+}
+
+.product__card--2 {
+    background-image: url(/img/for-man.png);
+    background-repeat: no-repeat;
+    grid-area: men;
+}
+
+.product__card--3 {
+    background-image: url(/img/for-kids.png);
+    background-repeat: no-repeat;
+    grid-area: kids;
+}
+
+.product__card--4 {
+    background-image: url(/img/accesories.png);
+    background-repeat: no-repeat;
+    grid-area: accesories;
+    min-height: 180px;
+}
+
+.card__name {
+    margin: 0;
+    text-transform: uppercase;
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    /* font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    text-align: center; */
+}
+
+.card__offer {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
