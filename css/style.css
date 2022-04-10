@@ -105,19 +105,22 @@ p {
     align-items: center;
 }
 
-.cart-img {
-    position: relative;
-}
 
-.cart-circle {
-    position: absolute;
-}
+/* .cart-img {
+    position: relative;
+} */
 
 
 /* hero */
 
 .hero {
     margin-bottom: 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero__pic {
+    height: 100%;
 }
 
 .hero__text {
@@ -125,9 +128,9 @@ p {
     padding-left: 16px;
     margin: 0;
     margin-left: 64px;
-    font-size: 32px;
+    font-size: 37px;
     font-weight: 700;
-    line-height: 38px;
+    line-height: 44px;
 }
 
 .fat-name {
@@ -148,7 +151,7 @@ p {
 }
 
 .hero__right {
-    width: 50%;
+    /* width: 50%; */
     background-color: #F1E4E6;
 }
 
@@ -221,4 +224,99 @@ p {
     line-height: 19px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .header__nav {
+        width: 100%;
+    }
+    .container {
+        width: 91.7%;
+    }
+    .container__adapt {
+        width: 96.3%;
+    }
+    .hero {
+        margin-bottom: 20px;
+    }
+    .hero__text {
+        margin-left: 39px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+    .fat-name {
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 53px;
+    }
+    .pink-name {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+    .products__grid {
+        gap: 20px;
+    }
+    .pd {
+        min-height: 167px;
+    }
+    .product__card--4 {
+        min-height: 116px;
+    }
+}
+
+@media (max-width: 376px) {
+    .header-personal-icon {
+        display: none;
+    }
+    .header-cart-icon {
+        display: none;
+    }
+    .header__nav-items--right {
+        gap: 0;
+    }
+    .container__adapt {
+        width: 91.3%;
+    }
+    .hero {
+        display: flex;
+        margin-bottom: 64px;
+    }
+    .hero__right {
+        width: 100%;
+        min-height: 363px;
+    }
+    .hero__text {
+        margin: 0 auto;
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .fat-name {
+        font-family: Lato;
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 46px;
+    }
+    .pink-name {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .hero__left {
+        display: none;
+    }
+    .products__grid {
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    .pd {
+        min-height: 250px;
+    }
+    .product__card--4 {
+        min-height: 111px;
+    }
 }
